@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords"
+          content="​A guide to staying wellat high altitude">
+    <meta name="description"
+          content="">
+    <meta name="page_type"
+          content="np-template-header-footer-from-plugin">
+    <title>AI-12345</title>
+    <link rel="stylesheet"
+          href="layout.css"
+          media="screen">
+    <link rel="stylesheet"
+          href="fix.css"
+          media="screen">
+    <meta name="generator"
+          content="Nicepage 3.27.5, nicepage.com">
+    <link id="u-theme-google-font"
+          rel="stylesheet"
+          href="google.css">
+    <link rel="canonical"
+          href="/">
+    <script type="text/javascript"
+            src="/TagCloud.min.js"></script>
+</head>
+
+<body class="u-body">
+    <section class="u-align-center u-clearfix u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-section-2"
+             id="carousel_33a4">
+        <div class="u-align-center u-container-style u-group u-shape-rectangle u-white u-group-1">
+            <div style="width: 100px;"
+                 class="u-container-layout u-valign-middle u-container-layout-1">
+                <h2 class="u-text u-text-default u-text-palette-5-dark-3 u-text-1">
+                    12345市政热线平台Demo,
+                    <br>
+                    <span style="font-weight: 700;">Powered by AI</span>
+                </h2>
+                <p class="u-text u-text-2">
+                    由OpenAI 耳语(whisper) API 接入实时语音,并由ChatGPT 3.5的文本模型达芬奇003(text-davinci-003)进行分类,路由到对应部门
+                    <br>
+                    <br>
+                </p>
+            </div>
+        </div>
+        <img class="u-expanded-width u-image u-image-1"
+             data-image-width="1920"
+             data-image-height="814"
+             src="./gffgfg.jpg">
+        <div id="container"></div>
+        <div style="margin-left: 20px;margin-top: 100px;">
+            <!--  添加下拉框,值是 OpenAI,科大讯飞 ,并且添加 函数,在下拉值的
+            改变时候, 修改 localStoreage  -->
+            <select style="height: 32px;width:100px;"
+                    id="llm_provider">
+                <option value="科大讯飞">科大讯飞</option>
+                <option value="OpenAI">OpenAI</option>
+            </select>
+
+
+            <button id="recordButton">🎤 开始录音</button>
+            <div style="margin-left: 700px; display: flex; align-items: center;">
+                <p id="status"></p>
+                <img id="loading"
+                     style="display: none;"
+                     src="/loading.gif">
+            </div>
+        </div>
+        <div style="width: 100%;">
+            <div style="padding-left: 10px; width: 49%;float: left;">
+                <textarea id="transcribe"
+                          style="width: 100%;"
+                          rows="7"> 市民电话的内容将会出现在这里.</textarea>
+            </div>
+            <div id="tagcloud"
+                 style="padding-left: 170px;  width: 49%;float: right;"></div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer"
+            id="sec-3208">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <p class="u-small-text u-text u-text-variant u-text-1">由OpenAI/耳语(whisper) API 接入实时语音,并由ChatGPT 3.5的文本模型达芬奇003(text-davinci-003)进行分类,路由到对应部门</p>
+        </div>
+    </footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+        <a class="u-link"
+           href="https://nicepage.com/website-templates"
+           target="_blank">
+            <span>Website Templates</span>
+        </a>
+        <p class="u-text">
+            <span>created with</span>
+        </p>
+        <a class="u-link"
+           href="https://nicepage.com/"
+           target="_blank">
+            <span>Website Builder Software</span>
+        </a>
+        <!-- analyzer container -->
+    </section>
+    <script type="module"
+            src="./app.js"></script>
+</body>
+
+</html>
